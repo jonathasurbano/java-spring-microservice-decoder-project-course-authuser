@@ -28,8 +28,6 @@ public class UserDto {
         }
     }
 
-    private UUID userId;
-
     @NotBlank(groups = UserView.RegistrationPost.class)
     @Size(min = 4, max = 50, groups = UserView.RegistrationPost.class)
     @UserNameConstraint(groups = UserView.RegistrationPost.class)
